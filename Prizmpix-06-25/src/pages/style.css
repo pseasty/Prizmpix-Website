@@ -1,0 +1,43 @@
+.about-container {
+  text-align: center;
+  background: linear-gradient(to right, slateblue, lightblue);
+  color: aquamarine;
+  font-family: "Trebuchet MS";
+  min-height: 100vh;
+}
+
+.about-container h2 {
+  font-size: 24px;
+}
+
+.about-container a {
+  background-color: slateblue;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.about-container img {
+  border-radius: 75px;
+  margin-top: 20px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.about-container img {
+  animation: bounce 2s infinite;
+}
