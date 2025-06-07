@@ -152,3 +152,31 @@ button[type="submit"]:hover {
     margin-bottom: 10px;
   }
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.title-container {
+  max-width: 1200px; /* adjust the value to match the width of your card grid */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card-carousel {
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.card-carousel .carousel {
+  border-radius: 10px;
+  overflow: hidden;
+}

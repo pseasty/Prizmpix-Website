@@ -1,16 +1,27 @@
-.about-container {
+.about-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.about-card {
   text-align: center;
   background: linear-gradient(to right, slateblue, lightblue);
   color: aquamarine;
   font-family: "Trebuchet MS";
-  min-height: 100vh;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 600px;
 }
 
-.about-container h2 {
+.about-card h2 {
   font-size: 24px;
 }
 
-.about-container a {
+.about-card a {
   background-color: slateblue;
   color: white;
   font-size: 20px;
@@ -21,7 +32,7 @@
   text-decoration: none;
 }
 
-.about-container img {
+.about-card img {
   border-radius: 75px;
   margin-top: 20px;
 }
@@ -38,6 +49,6 @@
   }
 }
 
-.about-container img {
+.about-card img {
   animation: bounce 2s infinite;
 }

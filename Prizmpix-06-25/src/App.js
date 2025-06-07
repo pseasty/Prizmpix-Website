@@ -9,6 +9,7 @@ import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
+import Checkout from './pages/Checkout';
 import './styles/App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/collaboration" component={Collaboration} />
         <Route path="/contact" component={Contact} />
+        <Route path="/checkout" component={Checkout} />
       </Switch>
       <Footer />
     </Router>

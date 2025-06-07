@@ -34,7 +34,7 @@ const Navbar = () => {
          <button style={{ backgroundColor: 'transparent', border: 'none', cursor: 'pointer', marginRight: '0px' }} onClick={handleSearchIconClick}>
            <FaSearch size={24} style={{ color: '#fff', transition: 'transform 0.2s ease-in-out' }} onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'} onMouseOut={(e) => e.target.style.transform = 'scale(1)'} />
          </button>
-         <Link to="/cart" style={{ marginRight: '40px' }}><FaShoppingCart size={24} /></Link>
+         <Link to="/checkout" style={{ marginRight: '40px' }}><FaShoppingCart size={24} /></Link>
       </div>
       {showSearch && <SearchBar />}
     </nav>

@@ -1,13 +1,14 @@
 import React from 'react';
+import CardGrid from '../components/CardGrid.js';
 
-const ShopByCategory = () => {
+const Portfolio = () => {
     return (
-        <div>
+        <div className="title-container">
             <h1>Portfolio</h1>
             <p>Explore my portfolio.</p>
-            {/* Add product categories here */}
+            <CardGrid />
         </div>
     );
 };
 
-export default ShopByCategory;
+export default Portfolio;

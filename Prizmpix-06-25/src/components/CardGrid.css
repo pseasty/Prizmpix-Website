@@ -1,0 +1,108 @@
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.image-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.image-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  width: calc(33.33% - 20px);
+}
+
+.image-box img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.description-box {
+  padding: 10px;
+  text-align: center;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.modal-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-overlay.show .modal-content {
+  transform: scale(1);
+}
+
+.modal-content {
+  max-width: 80%;
+  max-height: 70vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 60vh;
+  object-fit: contain;
+}
+
+.image-box img {
+  cursor: pointer;
+}
+
+.modal-description {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Add this line */
+}
+
