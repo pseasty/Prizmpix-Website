@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #333 !important;
 }
 
 header {
@@ -10,6 +10,19 @@ header {
     margin: 0;
     padding: 0;
     text-align: center;
+}
+
+h1, h2, h3 {
+    color: #ffffff !important;
+    font-family: 'My Font', sans-serif;
+}
+
+@font-face {
+    font-family: 'My Font';
+    src: url('../typefaces/FwTRIAL-PushVAR.ttf');
+    font-weight: 100 900;
+    font-stretch: 50% 200%; /* specify the width range */
+    font-style: normal;
 }
 
 nav {
@@ -52,14 +65,6 @@ a:hover img {
   transform: scale(1.1);
 }
 
-.social-icon img {
-  transition: transform 0.2s;
-}
-
-.social-icon:hover img {
-  transform: scale(1.1);
-}
-
 footer {
     background: #333;
     color: #fff;
@@ -74,29 +79,15 @@ footer {
     padding: 20px;
 }
 
-h1, h2, h3 {
-    color: #333;
+.social-icon img {
+  transition: transform 0.2s;
 }
 
-.product {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
-    background: #fff;
+.social-icon:hover img {
+  transform: scale(1.1);
 }
 
-.blog-post {
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-}
-
-.collaboration-info {
-    background: #e7f3fe;
-    border-left: 6px solid #2196F3;
-    padding: 10px;
-    margin: 10px 0;
-}
+/* contact form */
 .contact-form-card {
   max-width: 500px;
   margin: 40px auto;
@@ -129,8 +120,8 @@ h1, h2, h3 {
 }
 
 button[type="submit"] {
-  background-color: #333;
-  color: #fff;
+  background-color: rgb(86, 237, 177);
+  color: #333;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -138,12 +129,12 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #444;
+  background-color: rgb(74, 207, 154);
 }
 
+/* responsiveness */
 
 @media (max-width: 768px) {
-  /* Add styles here to override the default styles */
   nav ul {
     flex-direction: column;
   }
@@ -164,19 +155,110 @@ footer {
   margin-top: auto;
 }
 
+/* title formationg for pages */
 .title-container {
-  max-width: 1200px; /* adjust the value to match the width of your card grid */
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px 0 20px;
 }
 
-.card-carousel {
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+.marquee {
+    position: relative;
+    overflow: hidden;
 }
 
-.card-carousel .carousel {
-  border-radius: 10px;
+.marquee h1, .marquee p {
+    position: relative;
+    white-space: nowrap;
+    animation: marquee 25s linear infinite;
+}
+
+.marquee h1 span, .marquee p span {
+    margin-right: 100px; /* adjust the spacing value here */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* carousel */
+.carousel-image-container {
+  height: 400px; /* fixed height */
   overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption-container {
+  bottom: 20px;
+}
+
+.carousel-caption-card {
+  background-color: rgb(86, 237, 177);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: slide-down 0.9s;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.carousel-caption-card h3, .carousel-caption-card p {
+  color: #333;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e") !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+/* outer card */
+
+.outer-card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-color: #333;
 }

@@ -17,7 +17,7 @@ const CardGrid = () => {
 
   return (
     <div className="card-grid">
-        <h2>Recent Projects</h2>
+        <h2>Case Study 1</h2>
       <div className="image-grid">
         <div className="image-row">
           <div className="image-box">

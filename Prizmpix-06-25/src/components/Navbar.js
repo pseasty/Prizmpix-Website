@@ -22,7 +22,7 @@ const Navbar = () => {
       {/* Navlinks*/}
       <ul style={{ listStyle: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center', margin: '0 auto', marginBottom: '0.5rem' }}>
         <li style={{ marginRight: '20px' }}><Link to="/">Home</Link></li>
-        <li style={{ marginRight: '20px' }}><Link to="/services">Services</Link></li>
+        {/* <li style={{ marginRight: '20px' }}><Link to="/services">Services</Link></li> */}
         <li style={{ marginRight: '20px' }}><Link to="/about">About</Link></li>
         <li style={{ marginRight: '20px' }}><Link to="/collaboration">Collaboration</Link></li>
         <li style={{ marginRight: '20px' }}><Link to="/portfolio">Portfolio</Link></li>

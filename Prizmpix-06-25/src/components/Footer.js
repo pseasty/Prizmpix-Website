@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaCcVisa, FaCcMastercard, FaCcAmex, FaCcPaypal, } from 'react-icons/fa';
+import { FaFacebookF, FaDiscord, FaInstagram, FaCcVisa, FaCcMastercard, FaCcAmex, FaCcPaypal, } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
         <div style={{ display: 'flex', justifyContent: 'center', flexGrow: 1 }}>
           <div style={{ display: 'flex', flexDirection: 'column', width: '25%', marginRight: '20px' }}>
             <a href="javascript:void(0)" className="nav-link" style={{ color: '#fff', textDecoration: 'none', marginBottom: '10px' }}>Home</a>
-            <a href="javascript:void(0)" className="nav-link" style={{ color: '#fff', textDecoration: 'none', marginBottom: '10px' }}>Services</a>
+            {/* <a href="javascript:void(0)" className="nav-link" style={{ color: '#fff', textDecoration: 'none', marginBottom: '10px' }}>Services</a> */}
             <a href="javascript:void(0)" className="nav-link" style={{ color: '#fff', textDecoration: 'none', marginBottom: '10px' }}>About</a>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', width: '25%' }}>
@@ -22,10 +22,7 @@ const Footer = () => {
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
          <a href="javascript:void(0)" className="social-icon" style={{ marginBottom: '10px', color: '#fff' }}>
-               <FaFacebookF size={24} />
-         </a>
-         <a href="javascript:void(0)" className="social-icon" style={{ marginBottom: '10px', color: '#fff' }}>
-              <FaTwitter size={24} />
+               <FaDiscord size={24} />
          </a>
          <a href="javascript:void(0)" className="social-icon" style={{ color: '#fff' }}>
               <FaInstagram size={24} />
