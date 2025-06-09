@@ -13,7 +13,13 @@
 .image-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.description-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .image-box {
@@ -21,7 +27,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 10px;
-  width: calc(33.33% - 20px);
+  width: calc(50% - 20px);
 }
 
 .image-box img {
@@ -29,6 +35,7 @@
   height: 400px;
   object-fit: cover;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .description-box {
@@ -37,7 +44,8 @@
   background-color: #f7f7f7;
   border: 1px solid #ddd;
   border-radius: 10px;
-  margin-top: 10px;
+  margin: 0 10px;
+  width: calc(50% - 20px);
 }
 
 .modal-overlay {
@@ -106,3 +114,16 @@
   z-index: 1000; /* Add this line */
 }
 
+.conclusion-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.conclusion-container p {
+  max-width: 900px; /* Optional: sets a maximum width for the paragraph */
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
