@@ -1,8 +1,10 @@
 .card-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px; 
 }
 
 .image-grid {
@@ -111,19 +113,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Add this line */
+  z-index: 1000;
 }
 
 .conclusion-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 20px 20px;
 }
 
 .conclusion-container p {
-  max-width: 900px; /* Optional: sets a maximum width for the paragraph */
+  max-width: 900px; 
   text-align: center;
   font-size: 18px;
   line-height: 1.6;
+}
+
+.card-grid h2 {
+  text-align: center;
+}
+
+.conclusion-container div {
+  margin-top: 20px;
 }
