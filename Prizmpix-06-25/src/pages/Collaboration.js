@@ -22,15 +22,17 @@ const Collaboration = () => {
     <div className="about-page">
       <div className="about-card">
         <img src="/images/profile.png" width="150" alt="Patrick's profile image" />
-        <h1>Patrick</h1>
-        <h2>Aspiring Software Developer</h2>
+        <h1>Let's Collaborate!</h1>
+        <h2>Let's do this!</h2>
         <p>
-          Welcome to my page! I'm Patrick, an aspiring software developer. Follow my
-          journey by checking out my social media profiles. Happy coding!
+          If you have some ideas you'd liek to share or think i can be of service, shoot me a message! You can check out my portfolio in the link above in the navbar. 
         </p>
-<Link to="/contact">
-  Contact Me
-</Link>
+        <Link to="/portfolio">
+            My Portfolio
+        </Link>
+        <Link to="/contact">
+            Contact Me
+        </Link>
       </div>
     </div>
     </div>

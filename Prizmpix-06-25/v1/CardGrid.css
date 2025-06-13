@@ -1,0 +1,136 @@
+.card-grid {
+  background-color: #161616;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  max-width: 1200px; /* add max-width */
+  margin: 0 auto; /* center the card grid */
+}
+
+.image-grid {
+  display: block;
+}
+
+.image-row,
+.description-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.image-box,
+.description-box {
+  width: calc(50% - 20px);
+  margin: 0 10px;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.description-box {
+  padding: 10px;
+  text-align: center;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 0 10px;
+  width: calc(50% - 20px);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+
+.modal-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-overlay.show .modal-content {
+  transform: scale(1);
+}
+
+.modal-content {
+  max-width: 80%;
+  max-height: 70vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 60vh;
+  object-fit: contain;
+}
+
+.modal-caption {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+.modal-description {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  max-width: 600px; /* Add a max-width to prevent it from getting too wide */
+  width: 90%; /* Add a width to make it responsive */
+  word-wrap: break-word; /* Add word-wrap to prevent long words from overflowing */
+  overflow-y: auto; /* Add overflow-y to make it scrollable if the content is too long */
+  max-height: 20vh; /* Add a max-height to prevent it from getting too tall */
+}
+
+.image-box img {
+  cursor: pointer;
+}
+
+
+.conclusion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.conclusion-container p {
+  max-width: 900px; 
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.conclusion-container div {
+  margin-top: 10px;
+}
+
+.card-grid h2 {
+  text-align: center;
+}

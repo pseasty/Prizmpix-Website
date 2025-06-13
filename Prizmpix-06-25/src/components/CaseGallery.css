@@ -1,0 +1,57 @@
+.full-modal .modal-dialog {
+  max-width: 90vw;
+  margin: 0;
+  height: 100vh;
+}
+
+.full-modal-content {
+  height: 100vh;
+  border-radius: 0;
+  overflow-y: auto;
+  padding: 2rem;
+  background: #fff;
+}
+
+.case-detail-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.modal-header,
+.modal-body {
+  background-color: #f9f9f9;
+}
+
+.case-preview {
+  width: 100%;
+  height: 250px; /* or 200px if too tall */
+  object-fit: cover;
+  display: block;
+}
+
+custom-modal .modal-content {
+  background-color: #000; /* Black background */
+  color: #fff;            /* White text */
+  border-radius: 0;       /* Hard corners */
+  border: none;
+}
+
+.modal-content-black {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.modal-content-black h1,
+.modal-content-black h2,
+.modal-content-black h3,
+.modal-content-black h4,
+.modal-content-black h5,
+.modal-content-black h6,
+.modal-content-black p,
+.modal-content-black span,
+.modal-content-black li,
+.modal-content-black a,
+.modal-content-black div {
+  color: #000 !important;
+}
