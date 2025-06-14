@@ -32,7 +32,7 @@ const Navbar = () => {
         <Link to="/contact" className="nav-icon">
           <FaEnvelope size={24} />
         </Link>
-        <div className="mobile-menu-button" onClick={handleMobileMenuClick}>
+        <div className="mobile-menu-button" onClick={handleMobileMenuClick} aria-label="Toggle mobile menu" tabIndex={0}>
           <FaBars size={24} />
         </div>
       </div>

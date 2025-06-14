@@ -226,6 +226,7 @@ footer {
 
 /* title formationg for pages */
 .title-container {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px 0 20px;
 }
@@ -271,9 +272,9 @@ footer {
 }
 
 .carousel-caption-card {
-  background-color: rgb(86, 237, 177);
+  background: linear-gradient(135deg, rgb(39, 160, 112) 0%, rgb(86, 237, 177) 100%);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 0px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   animation: slide-down 0.9s;
 }
@@ -290,7 +291,7 @@ footer {
 }
 
 .carousel-caption-card h3, .carousel-caption-card p {
-  color: #333;
+  color: #333 !important;
 }
 
 .carousel-control-prev, .carousel-control-next {

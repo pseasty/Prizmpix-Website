@@ -1,0 +1,107 @@
+.about-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden; /* Add this to prevent horizontal scrollbar */
+}
+
+.background-card {
+  display: flex;
+  flex-direction: column; /* or row, depending on your needs */
+  align-items: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: slide-in-card-collab 0.5s ease-in-out;
+}
+
+.about-card {
+  text-align: center;
+  background: #333;
+  padding: 20px;
+  border-radius: 0px;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
+  width: 600px;
+  animation: slide-in-card-collab 0.5s ease-in-out;
+}
+
+@media (max-width: 700px) {
+  .background-card {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .about-card {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .background-card {
+    width: 95%;
+    padding: 5px;
+  }
+
+  .about-card {
+    padding: 5px;
+  }
+
+  .about-card a {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .about-card h2 {
+    font-size: 20px;
+  }
+
+  .about-card img {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@keyframes slide-in-card-collab {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.about-card a {
+  background: linear-gradient(135deg, rgb(39, 160, 112) 0%, rgb(86, 237, 177) 100%);
+  color: #333;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 0px;
+  margin: 10px;
+  display: block;
+  text-decoration: none;
+  animation: slide-in-links 0.5s ease-in-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+@keyframes slide-in-links-collab {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.about-card h2 {
+  font-size: 24px;
+}
+
+.about-card img {
+  border-radius: 75px;
+  margin-top: 20px;
+}
