@@ -30,7 +30,7 @@ const CaseStudy3 = () => (
     <hr className="my-4" />
     <h5>Conclusion</h5>
     <p>
-      Building this React.js web app has been a valuable learning experience that has helped me to develop my skills in front-end development and UX design. The app's design and implementation showcase my ability to create clean and intuitive interfaces, as well as my proficiency in writing modular and efficient code. I'm excited to continue working on this project and exploring new ways to improve its functionality and user experience.
+      Through building this React.js web app, I've gained hands-on experience in front-end development and UX design, refining my skills in crafting intuitive interfaces and writing efficient code. The app showcases my capabilities in design and implementation, and I'm eager to continue iterating on the project, exploring new ways to enhance its functionality and user experience. As an ongoing work in progress, I plan to apply my learnings to further develop my portfolio web app, fine-tuning its style, animations, and content.
     </p>
 
     {/* Links */}
