@@ -36,7 +36,7 @@ const About = () => {
             journey by checking out my social media profiles. Happy coding!
           </p>
           <div className={`button-container ${animate ? 'animate-buttons' : ''}`}>
-            <a href="https://github.com/pseasty/Prizmpix-Website" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/pseasty" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-git"></i> My Github
             </a>
             <Link to="/contact">

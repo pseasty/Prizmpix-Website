@@ -4,21 +4,8 @@ import { Carousel } from 'react-bootstrap';
 const Home = () => {
   return (
     <div className="title-container">
-      <div className="marquee">
-        <h1>
-          <span>PATRICK EAST</span>
-          <span></span>
-          <span>PATRICK EAST</span>
-          <span></span>
-          <span>PATRICK EAST</span>
-          <span></span>
-          <span>PATRICK EAST</span>
-          <span></span>
-          <span>PATRICK EAST</span>
-          <span></span>
-        </h1>
-      </div>
-      <div style={{ marginTop: '20px' }}>
+
+      <div style={{ marginTop: '20px', marginBottom: '100px' }}>
         <div className="card" style={{ padding: '20px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }}>
           <Carousel style={{ borderRadius: '0px', overflow: 'hidden' }}>
             <Carousel.Item>

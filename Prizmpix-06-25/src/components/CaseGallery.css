@@ -25,15 +25,15 @@
 
 .case-preview {
   width: 100%;
-  height: 250px; /* or 200px if too tall */
+  height: 400px; 
   object-fit: cover;
   display: block;
 }
 
 custom-modal .modal-content {
-  background-color: #000; /* Black background */
-  color: #fff;            /* White text */
-  border-radius: 0;       /* Hard corners */
+  background-color: #000; 
+  color: #fff;           
+  border-radius: 0;      
   border: none;
 }
 
@@ -54,4 +54,25 @@ custom-modal .modal-content {
 .modal-content-black a,
 .modal-content-black div {
   color: #000 !important;
+}
+
+.animate-caption {
+  animation: slide-up 0.4s ease-in-out forwards;
+  opacity: 0;
+  transform: translate(-50%, 100px);
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 100px);
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
 }

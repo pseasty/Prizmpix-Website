@@ -15,7 +15,7 @@ const CaseStudy1 = () => (
     </p>
 
     {/* Section 3 */}
-    <img src="/images/case1.3.png" className="img-fluid mb-3" alt="Interactive prototypes" />
+    <img src="/images/case1.3.2.png" className="img-fluid mb-3" alt="Interactive prototypes" />
     <p>
       Interactive prototypes allowed real-time testing on different devices. Iterative testing revealed accessibility improvements and performance tweaks before hand-off.
     </p>

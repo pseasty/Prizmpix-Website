@@ -25,7 +25,7 @@ h4 {
     font-family: 'My Font';
     src: url('../typefaces/FwTRIAL-PushVAR.ttf');
     font-weight: 100 900;
-    font-stretch: 50% 200%; /* specify the width range */
+    font-stretch: 50% 200%; 
     font-style: normal;
 }
 
@@ -220,8 +220,32 @@ body {
   margin: 0;
 }
 
-footer {
-  margin-top: auto;
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-top: 1px solid #444;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container > div {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .footer-container > div:last-child {
+    margin-bottom: 0;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-bottom > p {
+    margin-bottom: 10px;
+  }
 }
 
 /* title formationg for pages */
@@ -243,7 +267,7 @@ footer {
 }
 
 .marquee h1 span, .marquee p span {
-    margin-right: 100px; /* adjust the spacing value here */
+    margin-right: 100px; 
 }
 
 @keyframes marquee {
@@ -257,7 +281,7 @@ footer {
 
 /* carousel */
 .carousel-image-container {
-  height: 400px; /* fixed height */
+  height: 400px; 
   overflow: hidden;
 }
 
@@ -276,15 +300,21 @@ footer {
   padding: 20px;
   border-radius: 0px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  animation: slide-down 0.9s;
+  animation: slide-down 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 
 @keyframes slide-down {
-  from {
+  0% {
     transform: translateY(-100%);
     opacity: 0;
   }
-  to {
+  70% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  100% {
     transform: translateY(0);
     opacity: 1;
   }

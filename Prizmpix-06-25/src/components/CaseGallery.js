@@ -29,23 +29,37 @@ const CaseGallery = () => {
 
   return (
     <div className="container my-5">
-      <div className="row">
-        {items.map((item, index) => (
-          <div
-            className="col-12 col-md-4 mb-4"
-            key={index}
-            onClick={() => setSelectedIndex(index)}
-            style={{ cursor: 'pointer' }}
-          >
-            <div className="position-relative">
-              <img src={item.image} className="case-preview" alt="Case Preview" />
-              <div className="overlay-text position-absolute bottom-0 start-0 p-2 bg-dark bg-opacity-50 text-white w-100">
-                {item.title}
-              </div>
+      {items.map((item, index) => (
+        <div
+          key={index}
+          className="card mb-4"
+          style={{
+            borderRadius: '10px',
+            backgroundColor: 'white',
+            boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+            cursor: 'pointer',
+            padding: '20px'
+          }}
+          onClick={() => setSelectedIndex(index)}
+        >
+          <div style={{ position: 'relative' }}>
+            <img src={item.image} className={`card-img-top case-preview animate-image`} alt="Case Preview" style={{ borderRadius: '0px', animationDelay: `${index * 0.2}s` }} />
+            <div className="animate-caption" style={{
+              position: 'absolute',
+              bottom: '30px',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              background: 'linear-gradient(135deg, rgb(39, 160, 112) 0%, rgb(86, 237, 177) 100%)',
+              padding: '10px 20px',
+              borderRadius: '0px',
+              textAlign: 'center',
+              animationDelay: `${index * 0.2 + 0.1}s`
+            }}>
+              <h5 style={{ margin: 0 }}>{item.title}</h5>
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
 
       <Modal
         show={selectedIndex !== null}

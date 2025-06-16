@@ -8,7 +8,7 @@
 
 .background-card {
   display: flex;
-  flex-direction: column; /* or row, depending on your needs */
+  flex-direction: column; 
   align-items: center;
   background: #ffffff;
   padding: 20px;
